@@ -6,6 +6,8 @@ target 'RNCodePush' do
   # use_frameworks!
 
   # Pods for RNCodePush
+  pod 'AppCenterReactNativeShared', '~> 1.1.0'
+  pod 'AppCenter/Push', '~> 1.1.0'
   pod 'RNMobileCenterShared', '~> 0.11.2'
   pod 'MobileCenter/Analytics', '~> 0.14.1'
 

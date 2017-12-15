@@ -8,6 +8,7 @@
  */
 
 #import "AppDelegate.h"
+#import <AppCenterReactNativePush/AppCenterReactNativePush.h>
 #import <RNAnalytics/RNAnalytics.h>
 #import <CodePush/CodePush.h>
 
@@ -19,6 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+
+  [AppCenterReactNativePush register];  // Initialize AppCenter push
 
   [RNAnalytics registerWithInitiallyEnabled:true];  // Initialize Mobile Center analytics
 
